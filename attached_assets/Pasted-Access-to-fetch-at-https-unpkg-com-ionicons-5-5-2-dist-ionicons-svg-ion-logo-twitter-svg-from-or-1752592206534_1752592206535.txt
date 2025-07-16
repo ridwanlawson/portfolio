@@ -1,0 +1,181 @@
+Access to fetch at 'https://unpkg.com/ionicons@5.5.2/dist/ionicons/svg/ion-logo-twitter.svg' from origin 'https://ba8ac747-5260-41ef-9d19-eb49def105be-00-39dnhegc91ds8.sisko.replit.dev:5000' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+p-5c60b45e.entry.js:1   GET https://unpkg.com/ionicons@5.5.2/dist/ionicons/svg/ion-logo-twitter.svg net::ERR_FAILED 404 (Not Found)
+(anonymous) @ p-5c60b45e.entry.js:1
+loadIcon @ p-5c60b45e.entry.js:1
+(anonymous) @ p-5c60b45e.entry.js:1
+waitUntilVisible @ p-5c60b45e.entry.js:1
+connectedCallback @ p-5c60b45e.entry.js:1
+R @ p-e26ac56f.js:1
+H @ p-e26ac56f.js:1
+(anonymous) @ p-e26ac56f.js:1
+(anonymous) @ p-e26ac56f.js:1
+(anonymous) @ p-e26ac56f.js:1
+jmp @ p-e26ac56f.js:1
+connectedCallback @ p-e26ac56f.js:1
+(anonymous) @ script.js:231
+loadSocialData @ script.js:218
+await in loadSocialData
+(anonymous) @ script.js:383
+p-5c60b45e.entry.js:1    Uncaught (in promise) TypeError: Failed to fetch
+    at p-5c60b45e.entry.js:1:1150
+    at h.loadIcon (p-5c60b45e.entry.js:1:1643)
+    at p-5c60b45e.entry.js:1:608
+    at h.waitUntilVisible (p-5c60b45e.entry.js:1:933)
+    at h.connectedCallback (p-5c60b45e.entry.js:1:547)
+    at R (p-e26ac56f.js:1:4183)
+    at H (p-e26ac56f.js:1:5109)
+    at p-e26ac56f.js:1:6090
+    at p-e26ac56f.js:1:6334
+    at p-e26ac56f.js:1:6348
+(anonymous) @ p-5c60b45e.entry.js:1
+loadIcon @ p-5c60b45e.entry.js:1
+(anonymous) @ p-5c60b45e.entry.js:1
+waitUntilVisible @ p-5c60b45e.entry.js:1
+connectedCallback @ p-5c60b45e.entry.js:1
+R @ p-e26ac56f.js:1
+H @ p-e26ac56f.js:1
+(anonymous) @ p-e26ac56f.js:1
+(anonymous) @ p-e26ac56f.js:1
+(anonymous) @ p-e26ac56f.js:1
+jmp @ p-e26ac56f.js:1
+connectedCallback @ p-e26ac56f.js:1
+(anonymous) @ script.js:231
+loadSocialData @ script.js:218
+await in loadSocialData
+(anonymous) @ script.js:383
+ba8ac747-5260-41ef-9d19-eb49def105be-00-39dnhegc91ds8.sisko.replit.dev/:1  Access to fetch at 'https://unpkg.com/ionicons@5.5.2/dist/ionicons/svg/ion-logo-facebook.svg' from origin 'https://ba8ac747-5260-41ef-9d19-eb49def105be-00-39dnhegc91ds8.sisko.replit.dev:5000' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+p-5c60b45e.entry.js:1   GET https://unpkg.com/ionicons@5.5.2/dist/ionicons/svg/ion-logo-facebook.svg net::ERR_FAILED 404 (Not Found)
+(anonymous) @ p-5c60b45e.entry.js:1
+loadIcon @ p-5c60b45e.entry.js:1
+(anonymous) @ p-5c60b45e.entry.js:1
+waitUntilVisible @ p-5c60b45e.entry.js:1
+connectedCallback @ p-5c60b45e.entry.js:1
+R @ p-e26ac56f.js:1
+H @ p-e26ac56f.js:1
+(anonymous) @ p-e26ac56f.js:1
+(anonymous) @ p-e26ac56f.js:1
+(anonymous) @ p-e26ac56f.js:1
+jmp @ p-e26ac56f.js:1
+connectedCallback @ p-e26ac56f.js:1
+(anonymous) @ script.js:231
+loadSocialData @ script.js:218
+await in loadSocialData
+(anonymous) @ script.js:383
+2p-5c60b45e.entry.js:1    Uncaught (in promise) TypeError: Failed to fetch
+    at p-5c60b45e.entry.js:1:1150
+    at h.loadIcon (p-5c60b45e.entry.js:1:1643)
+    at p-5c60b45e.entry.js:1:608
+    at h.waitUntilVisible (p-5c60b45e.entry.js:1:933)
+    at h.connectedCallback (p-5c60b45e.entry.js:1:547)
+    at R (p-e26ac56f.js:1:4183)
+    at H (p-e26ac56f.js:1:5109)
+    at p-e26ac56f.js:1:6090
+    at p-e26ac56f.js:1:6334
+    at p-e26ac56f.js:1:6348
+(anonymous) @ p-5c60b45e.entry.js:1
+loadIcon @ p-5c60b45e.entry.js:1
+(anonymous) @ p-5c60b45e.entry.js:1
+waitUntilVisible @ p-5c60b45e.entry.js:1
+connectedCallback @ p-5c60b45e.entry.js:1
+R @ p-e26ac56f.js:1
+H @ p-e26ac56f.js:1
+(anonymous) @ p-e26ac56f.js:1
+(anonymous) @ p-e26ac56f.js:1
+(anonymous) @ p-e26ac56f.js:1
+jmp @ p-e26ac56f.js:1
+connectedCallback @ p-e26ac56f.js:1
+(anonymous) @ script.js:231
+loadSocialData @ script.js:218
+await in loadSocialData
+(anonymous) @ script.js:383
+ba8ac747-5260-41ef-9d19-eb49def105be-00-39dnhegc91ds8.sisko.replit.dev/:1  Access to fetch at 'https://unpkg.com/ionicons@5.5.2/dist/ionicons/svg/ion-logo-linkedin.svg' from origin 'https://ba8ac747-5260-41ef-9d19-eb49def105be-00-39dnhegc91ds8.sisko.replit.dev:5000' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+p-5c60b45e.entry.js:1   GET https://unpkg.com/ionicons@5.5.2/dist/ionicons/svg/ion-logo-linkedin.svg net::ERR_FAILED 404 (Not Found)
+(anonymous) @ p-5c60b45e.entry.js:1
+loadIcon @ p-5c60b45e.entry.js:1
+(anonymous) @ p-5c60b45e.entry.js:1
+waitUntilVisible @ p-5c60b45e.entry.js:1
+connectedCallback @ p-5c60b45e.entry.js:1
+R @ p-e26ac56f.js:1
+H @ p-e26ac56f.js:1
+(anonymous) @ p-e26ac56f.js:1
+(anonymous) @ p-e26ac56f.js:1
+(anonymous) @ p-e26ac56f.js:1
+jmp @ p-e26ac56f.js:1
+connectedCallback @ p-e26ac56f.js:1
+(anonymous) @ script.js:231
+loadSocialData @ script.js:218
+await in loadSocialData
+(anonymous) @ script.js:383
+p-5c60b45e.entry.js:1    Uncaught (in promise) TypeError: Failed to fetch
+    at p-5c60b45e.entry.js:1:1150
+    at h.loadIcon (p-5c60b45e.entry.js:1:1643)
+    at p-5c60b45e.entry.js:1:608
+    at h.waitUntilVisible (p-5c60b45e.entry.js:1:933)
+    at h.connectedCallback (p-5c60b45e.entry.js:1:547)
+    at R (p-e26ac56f.js:1:4183)
+    at H (p-e26ac56f.js:1:5109)
+    at p-e26ac56f.js:1:6090
+    at p-e26ac56f.js:1:6334
+    at p-e26ac56f.js:1:6348
+(anonymous) @ p-5c60b45e.entry.js:1
+loadIcon @ p-5c60b45e.entry.js:1
+(anonymous) @ p-5c60b45e.entry.js:1
+waitUntilVisible @ p-5c60b45e.entry.js:1
+connectedCallback @ p-5c60b45e.entry.js:1
+R @ p-e26ac56f.js:1
+H @ p-e26ac56f.js:1
+(anonymous) @ p-e26ac56f.js:1
+(anonymous) @ p-e26ac56f.js:1
+(anonymous) @ p-e26ac56f.js:1
+jmp @ p-e26ac56f.js:1
+connectedCallback @ p-e26ac56f.js:1
+(anonymous) @ script.js:231
+loadSocialData @ script.js:218
+await in loadSocialData
+(anonymous) @ script.js:383
+ba8ac747-5260-41ef-9d19-eb49def105be-00-39dnhegc91ds8.sisko.replit.dev/:1  Access to fetch at 'https://unpkg.com/ionicons@5.5.2/dist/ionicons/svg/ion-logo-instagram.svg' from origin 'https://ba8ac747-5260-41ef-9d19-eb49def105be-00-39dnhegc91ds8.sisko.replit.dev:5000' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+p-5c60b45e.entry.js:1   GET https://unpkg.com/ionicons@5.5.2/dist/ionicons/svg/ion-logo-instagram.svg net::ERR_FAILED 404 (Not Found)
+(anonymous) @ p-5c60b45e.entry.js:1
+loadIcon @ p-5c60b45e.entry.js:1
+(anonymous) @ p-5c60b45e.entry.js:1
+waitUntilVisible @ p-5c60b45e.entry.js:1
+connectedCallback @ p-5c60b45e.entry.js:1
+R @ p-e26ac56f.js:1
+H @ p-e26ac56f.js:1
+(anonymous) @ p-e26ac56f.js:1
+(anonymous) @ p-e26ac56f.js:1
+(anonymous) @ p-e26ac56f.js:1
+jmp @ p-e26ac56f.js:1
+connectedCallback @ p-e26ac56f.js:1
+(anonymous) @ script.js:231
+loadSocialData @ script.js:218
+await in loadSocialData
+(anonymous) @ script.js:383
+p-5c60b45e.entry.js:1    Uncaught (in promise) TypeError: Failed to fetch
+    at p-5c60b45e.entry.js:1:1150
+    at h.loadIcon (p-5c60b45e.entry.js:1:1643)
+    at p-5c60b45e.entry.js:1:608
+    at h.waitUntilVisible (p-5c60b45e.entry.js:1:933)
+    at h.connectedCallback (p-5c60b45e.entry.js:1:547)
+    at R (p-e26ac56f.js:1:4183)
+    at H (p-e26ac56f.js:1:5109)
+    at p-e26ac56f.js:1:6090
+    at p-e26ac56f.js:1:6334
+    at p-e26ac56f.js:1:6348
+(anonymous) @ p-5c60b45e.entry.js:1
+loadIcon @ p-5c60b45e.entry.js:1
+(anonymous) @ p-5c60b45e.entry.js:1
+waitUntilVisible @ p-5c60b45e.entry.js:1
+connectedCallback @ p-5c60b45e.entry.js:1
+R @ p-e26ac56f.js:1
+H @ p-e26ac56f.js:1
+(anonymous) @ p-e26ac56f.js:1
+(anonymous) @ p-e26ac56f.js:1
+(anonymous) @ p-e26ac56f.js:1
+jmp @ p-e26ac56f.js:1
+connectedCallback @ p-e26ac56f.js:1
+(anonymous) @ script.js:231
+loadSocialData @ script.js:218
+await in loadSocialData
+(anonymous) @ script.js:383
+ba8ac747-5260-41ef-9d19-eb49def105be-00-39dnhegc91ds8.sisko.replit.dev/:438   GET https://ba8ac747-5260-41ef-9d19-eb49def105be-00-39dnhegc91ds8.sisko.replit.dev:5000/assets/images/gud 404 (Not Found)
