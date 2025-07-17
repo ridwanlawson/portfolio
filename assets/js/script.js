@@ -5,8 +5,10 @@ const elementToggleFunc = function (elem) { elem.classList.toggle("active"); }
 
 // API functions
 // API Configuration - work with both local and Replit
-const API_BASE_URL = window.location.origin;
+// const API_BASE_URL = window.location.origin;
+const API_BASE_URL = window.location.origin + window.location.pathname;
 
+console.log("API_BASE_URL: " + API_BASE_URL);
 async function loadProfileData() {
   try {
     const response = await fetch(`${API_BASE_URL}/api.php?action=profile`);
@@ -159,7 +161,7 @@ function initPortfolioFilter() {
 // Load and display blog data
 async function loadBlogData() {
   try {
-    const response = await fetch('/api.php?action=blog');
+    const response = await fetch(`${API_BASE_URL}/api.php?action=blog`);
     if (!response.ok) {
       throw new Error(`HTTP error! status: ${response.status}`);
     }
@@ -202,7 +204,7 @@ async function loadBlogData() {
 // Load and display social media data
 async function loadSocialData() {
   try {
-    const response = await fetch('/api.php?action=social');
+    const response = await fetch(`${API_BASE_URL}/api.php?action=social`);
     if (!response.ok) {
       throw new Error(`HTTP error! status: ${response.status}`);
     }
@@ -244,7 +246,7 @@ async function loadSocialData() {
 // Load and display testimonials data
 async function loadTestimonialsData() {
   try {
-    const response = await fetch('/api.php?action=testimonials');
+    const response = await fetch(`${API_BASE_URL}/api.php?action=testimonials`);
     if (!response.ok) {
       throw new Error(`HTTP error! status: ${response.status}`);
     }
@@ -282,7 +284,7 @@ async function loadTestimonialsData() {
 // Load and display skills data
 async function loadSkillsData() {
   try {
-    const response = await fetch('/api.php?action=skills');
+    const response = await fetch(`${API_BASE_URL}/api.php?action=skills`);
     if (!response.ok) {
       throw new Error(`HTTP error! status: ${response.status}`);
     }
@@ -318,7 +320,7 @@ async function loadSkillsData() {
 // Load and display what I'm doing data
 async function loadWhatDoingData() {
   try {
-    const response = await fetch('/api.php?action=what-doing');
+    const response = await fetch(`${API_BASE_URL}/api.php?action=what-doing`);
     if (!response.ok) {
       throw new Error(`HTTP error! status: ${response.status}`);
     }
@@ -380,7 +382,7 @@ async function loadExperienceData() {
 // Load and display map data
 async function loadMapData() {
   try {
-    const response = await fetch('/api.php?action=map');
+    const response = await fetch(`${API_BASE_URL}/api.php?action=map`);
     if (!response.ok) {
       throw new Error(`HTTP error! status: ${response.status}`);
     }
@@ -402,7 +404,7 @@ async function loadMapData() {
 // Load and display clients data
 async function loadClientsData() {
   try {
-    const response = await fetch('/api.php?action=clients');
+    const response = await fetch(`${API_BASE_URL}/api.php?action=clients`);
     if (!response.ok) {
       throw new Error(`HTTP error! status: ${response.status}`);
     }
@@ -632,7 +634,7 @@ if (form) {
     };
 
     try {
-      const response = await fetch('/api.php?action=contact', {
+      const response = await fetch(`${API_BASE_URL}/api.php?action=contact`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
