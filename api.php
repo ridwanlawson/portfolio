@@ -135,6 +135,14 @@ try {
     }
 } catch (Exception $e) {
     error_log("API Error: " . $e->getMessage());
-    echo json_encode(['error' => 'Database connection failed: ' . $e->getMessage()]);
+    echo json_encode([
+        'error' => 'Database connection failed: ' . $e->getMessage(),
+        'debug' => [
+            'action' => $action,
+            'db_file' => __DIR__ . '/admin/portfolio.db',
+            'file_exists' => file_exists(__DIR__ . '/admin/portfolio.db'),
+            'timestamp' => date('Y-m-d H:i:s')
+        ]
+    ]);
 }
 ?>

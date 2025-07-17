@@ -4,7 +4,7 @@
 const elementToggleFunc = function (elem) { elem.classList.toggle("active"); }
 
 // API functions
-// Base URL for API calls
+// API Configuration - work with both local and Replit
 const API_BASE_URL = window.location.origin;
 
 async function loadProfileData() {
@@ -623,7 +623,7 @@ for (let i = 0; i < formInputs.length; i++) {
 if (form) {
   form.addEventListener('submit', async function(e) {
     e.preventDefault();
-    
+
     const formData = new FormData(form);
     const data = {
       fullname: formData.get('fullname'),
@@ -641,7 +641,7 @@ if (form) {
       });
 
       const result = await response.json();
-      
+
       if (result.success) {
         alert('Message sent successfully!');
         form.reset();

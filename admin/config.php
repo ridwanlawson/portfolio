@@ -13,6 +13,11 @@ if (!file_exists($db_file)) {
     chmod($db_file, 0666);
 }
 
+// Make sure file is writable
+if (!is_writable($db_file)) {
+    chmod($db_file, 0666);
+}
+
 try {
     $pdo = new PDO("sqlite:" . $db_file);
     $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
