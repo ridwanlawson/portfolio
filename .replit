@@ -9,7 +9,20 @@ publicDir = "/"
 deploymentTarget = "static"
 
 [workflows]
-runButton = "Serve Portfolio with PHP"
+runButton = "PHP Server"
+
+[[workflows.workflow]]
+name = "Serve static"
+mode = "parallel"
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = """
+echo \"Serving HTML, open the Preview to see your output.
+To see changes you make, you can hit the refresh button in the preview, you do \u001B[1mnot\u001B[0m have to stop and run again.
+Console logs are available in the Preview devtools or your browser devtools.\" && static-web-server -w ./.config/static-web-server.toml
+"""
+waitForPort = 80
 
 [[workflows.workflow]]
 name = "Serve Portfolio with PHP"
@@ -20,6 +33,19 @@ mode = "parallel"
 task = "shell.exec"
 args = "php -S 0.0.0.0:5000 -t ."
 
+[[workflows.workflow]]
+name = "PHP Server"
+author = 45100711
+mode = "sequential"
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "php -S 0.0.0.0:8080 -t ."
+
 [[ports]]
 localPort = 5000
 externalPort = 5000
+
+[[ports]]
+localPort = 8080
+externalPort = 80
