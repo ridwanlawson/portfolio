@@ -1,0 +1,40 @@
+
+# Enable rewrite engine
+RewriteEngine On
+
+# Allow CORS for API calls
+Header always set Access-Control-Allow-Origin "*"
+Header always set Access-Control-Allow-Methods "GET, POST, OPTIONS"
+Header always set Access-Control-Allow-Headers "Content-Type"
+
+# Handle OPTIONS requests
+RewriteCond %{REQUEST_METHOD} OPTIONS
+RewriteRule ^(.*)$ $1 [R=200,L]
+
+# Redirect to index.html if no file specified
+DirectoryIndex index.html index.php
+
+# Ensure SQLite database is accessible
+<Files "*.db">
+    Order allow,deny
+    Allow from all
+</Files>
+
+# Set proper MIME types
+AddType application/json .json
+AddType text/javascript .js
+AddType text/css .css
+
+# Enable compression
+<IfModule mod_deflate.c>
+    AddOutputFilterByType DEFLATE text/plain
+    AddOutputFilterByType DEFLATE text/html
+    AddOutputFilterByType DEFLATE text/xml
+    AddOutputFilterByType DEFLATE text/css
+    AddOutputFilterByType DEFLATE application/xml
+    AddOutputFilterByType DEFLATE application/xhtml+xml
+    AddOutputFilterByType DEFLATE application/rss+xml
+    AddOutputFilterByType DEFLATE application/javascript
+    AddOutputFilterByType DEFLATE application/x-javascript
+    AddOutputFilterByType DEFLATE application/json
+</IfModule>

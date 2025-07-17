@@ -9,7 +9,12 @@ header('Access-Control-Allow-Methods: GET, POST, OPTIONS');
 header('Access-Control-Allow-Headers: Content-Type');
 
 try {
-    require_once 'admin/config.php';
+    // Use main config first, then admin config as fallback
+    if (file_exists(__DIR__ . '/config.php')) {
+        require_once __DIR__ . '/config.php';
+    } else {
+        require_once __DIR__ . '/admin/config.php';
+    }
 
     $action = $_GET['action'] ?? '';
 

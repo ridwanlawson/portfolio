@@ -7,6 +7,12 @@ if (!is_dir(__DIR__)) {
     mkdir(__DIR__, 0755, true);
 }
 
+// Create database file if it doesn't exist
+if (!file_exists($db_file)) {
+    touch($db_file);
+    chmod($db_file, 0666);
+}
+
 try {
     $pdo = new PDO("sqlite:" . $db_file);
     $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
